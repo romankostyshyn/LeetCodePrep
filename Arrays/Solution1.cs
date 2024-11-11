@@ -11,6 +11,7 @@ namespace LeetCode.Arrays
         public int[] TwoSum(int[] nums, int target)
         {
             Dictionary<int, int> seen = new Dictionary<int, int>();
+            Console.WriteLine(nums.Length);
             for (int i = 0; i < nums.Length; i++)
             {
                 int diff = target - nums[i];

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace LeetCode.Arrays
 {
-    public class Solution26
+    public class Solution27
     {
-        public int RemoveDuplicates(int[] nums)
+        public int RemoveElement(int[] nums, int val)
         {
-            int replace = 1;
-            for (int i = 1; i < nums.Length; i++)
+            int replace = 0;
+            for (int i = 0; i < nums.Length; i++)
             {
-                if (nums[i - 1] != nums[i])
+               if (nums[i] != val)
                 {
                     nums[replace] = nums[i];
                     replace++;
