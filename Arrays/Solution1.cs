@@ -12,14 +12,17 @@ namespace LeetCode.Arrays
         {
             Dictionary<int, int> seen = new Dictionary<int, int>();
             Console.WriteLine(nums.Length);
+
             for (int i = 0; i < nums.Length; i++)
             {
                 int diff = target - nums[i];
+
                 if (seen.ContainsKey(diff))
                 {
                     Console.WriteLine($"{seen[diff]}, {i}");
                     return [seen[diff], i];
                 }
+
                 else if (!seen.ContainsKey(nums[i]))
                 {
                     seen.Add(nums[i], i);
