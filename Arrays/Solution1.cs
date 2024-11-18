@@ -22,7 +22,6 @@ namespace LeetCode.Arrays
                     Console.WriteLine($"{seen[diff]}, {i}");
                     return [seen[diff], i];
                 }
-
                 else if (!seen.ContainsKey(nums[i]))
                 {
                     seen.Add(nums[i], i);

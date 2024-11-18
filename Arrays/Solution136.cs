@@ -14,7 +14,7 @@ namespace LeetCode.Arrays
 
             for (int i = 0; i < nums.Length; i++)
             {
-                answer = answer ^ nums[i];
+                answer ^= nums[i];
             }
 
             return answer;

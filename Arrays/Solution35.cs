@@ -21,12 +21,10 @@ namespace LeetCode.Arrays
                 {
                     l = mid + 1;
                 }
-
                 else if (nums[mid] > target)
                 {
                     r = mid - 1;
                 }
-
                 else
                 {
                     return mid;

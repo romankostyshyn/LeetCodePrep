@@ -1,4 +1,5 @@
 ﻿using LeetCode.Arrays;
+using LeetCode.Strings;
 
 public class Program
 {
@@ -11,6 +12,7 @@ public class Program
         Solution66 solution66 = new Solution66();
         Solution88 solution88 = new Solution88();
         Solution136 solution136 = new Solution136();
+        Solution13 solution13 = new Solution13();
 
         //solution1.TwoSum([1, 2, 3], 3);
         //Console.WriteLine($"{solution26.RemoveDuplicates([1, 1, 2])}");
@@ -18,6 +20,7 @@ public class Program
         //Console.WriteLine($"{solution27.RemoveElement([0, 1, 2, 2, 3, 0, 4, 2], 2)}");
         //solution66.PlusOne([8, 9, 9, 9]);
         //solution88.Merge([0], 0, [1], 1);
-        solution136.SingleNumber([4, 1, 2, 1, 2]);
+        //solution136.SingleNumber([1, 2, 1, 2]);
+        solution13.RomanToInt("MCMXCIV");
     }
 }
