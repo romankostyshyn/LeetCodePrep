@@ -10,7 +10,8 @@ namespace LeetCode.Strings
     {
         public int RomanToInt(string s)
         {
-            Dictionary <char, int> roman = new Dictionary<char, int>();
+            int total = 0;
+            Dictionary<char, int> roman = new Dictionary<char, int>();
 
             roman.Add('I', 1);
             roman.Add('V', 5);
@@ -19,8 +20,6 @@ namespace LeetCode.Strings
             roman.Add('C', 100);
             roman.Add('D', 500);
             roman.Add('M', 1000);
-
-            int total = 0;
 
             for (int i = 0; i < s.Length - 1; i++)
             {
