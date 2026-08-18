@@ -14,6 +14,7 @@ public class Program
         Solution136 solution136 = new Solution136();
         Solution13 solution13 = new Solution13();
         Solution14 solution14 = new Solution14();
+        Solution121 solution121 = new Solution121();
 
         //solution1.TwoSum([1, 2, 3], 3);
         //Console.WriteLine($"{solution26.RemoveDuplicates([1, 1, 2])}");
@@ -23,6 +24,7 @@ public class Program
         //solution88.Merge([0], 0, [1], 1);
         //solution136.SingleNumber([1, 2, 1, 2]);
         //solution13.RomanToInt("MCMXCIV");
-        solution14.LongestCommonPrefix([]);
+        //solution14.LongestCommonPrefix([]);
+        solution121.MaxProfit([0, 1, 2, 2, 3, 0, 4, 2]);
     }
 }
