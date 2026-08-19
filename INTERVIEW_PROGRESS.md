@@ -12,6 +12,7 @@
 | Problem | Difficulty | Attempt date | Topic/pattern (after attempt) | Independence / highest hint | Time | Complexity analysis | Key insight or mistake | Status | Repeat |
 |---|---|---|---|---|---:|---|---|---|---|
 | 121. Best Time to Buy and Sell Stock | Easy | 2026-08-18 | One-pass scan; running minimum; running optimum | Meaningful guided help / Level 4 | Not recorded | Initially incorrect; correctly derived O(n) time and O(1) space after guidance | Repeatedly searching earlier prices can be replaced by the lowest price seen so far. Watch subtraction order, index vs. value, and preserving the maximum. | Group B | 2026-08-21 |
+| 217. Contains Duplicate | Easy | 2026-08-19 | Hash set; membership tracking | Meaningful guided help / Level 3 | Not recorded | Final expected O(n) time and O(n) space correct; initially misanalyzed pairwise and sorting costs | A set of previously seen values replaces repeated pairwise comparisons. Distinguish values from hashes; remember to initialize collections and check C# delimiters. | Group B | 2026-08-24 |
 
 ## Review Queue
 
@@ -25,3 +26,8 @@ Review timing will be assigned after each attempt. Group A and Group B problems 
 - Completed: 121. Best Time to Buy and Sell Stock — Group B; repeat scheduled for 2026-08-21.
 - Completed post-problem pattern reflection.
 - Session ended after one in-depth problem; 217. Contains Duplicate deferred to Day 2.
+
+### Day 2 — 2026-08-19
+
+- Completed: 217. Contains Duplicate — Group B; repeat scheduled for 2026-08-24.
+- Next: post-problem pattern reflection, then 242. Valid Anagram if the session continues.
