@@ -13,6 +13,7 @@
 |---|---|---|---|---|---:|---|---|---|---|
 | 121. Best Time to Buy and Sell Stock | Easy | 2026-08-18 | One-pass scan; running minimum; running optimum | Meaningful guided help / Level 4 | Not recorded | Initially incorrect; correctly derived O(n) time and O(1) space after guidance | Repeatedly searching earlier prices can be replaced by the lowest price seen so far. Watch subtraction order, index vs. value, and preserving the maximum. | Group B | 2026-08-21 |
 | 217. Contains Duplicate | Easy | 2026-08-19 | Hash set; membership tracking | Meaningful guided help / Level 3 | Not recorded | Final expected O(n) time and O(n) space correct; initially misanalyzed pairwise and sorting costs | A set of previously seen values replaces repeated pairwise comparisons. Distinguish values from hashes; remember to initialize collections and check C# delimiters. | Group B | 2026-08-24 |
+| 242. Valid Anagram | Easy | 2026-08-19 | Frequency counting; hash map | Mostly independent / Level 1 plus C# API help | Not recorded | Correctly derived O(n) expected time and O(1) space for the fixed 26-letter alphabet | A frequency map can summarize multiplicities; increment for one string and decrement/remove for the other. Use `Length` for strings and practice dictionary syntax. | Group C | 2026-09-02 |
 
 ## Review Queue
 
@@ -30,4 +31,11 @@ Review timing will be assigned after each attempt. Group A and Group B problems 
 ### Day 2 — 2026-08-19
 
 - Completed: 217. Contains Duplicate — Group B; repeat scheduled for 2026-08-24.
-- Next: post-problem pattern reflection, then 242. Valid Anagram if the session continues.
+- Completed: 242. Valid Anagram — Group C; repeat scheduled for 2026-09-02.
+- Completed post-problem reflection and introduced fixed-size frequency arrays for bounded alphabets.
+- Day 2 complete after two problems.
+
+### Day 3 — 2026-08-20
+
+- Follow-up: implemented the fixed-size `int[26]` alternative for 242. Valid Anagram.
+- Key reinforcement: map lowercase characters with `character - 'a'`; prefer narrow local-variable scope.
