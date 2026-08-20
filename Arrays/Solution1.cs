@@ -4,25 +4,17 @@
     {
         public int[] TwoSum(int[] nums, int target)
         {
-            Dictionary<int, int> seen = new Dictionary<int, int>();
-            Console.WriteLine(nums.Length);
-
-            for (int i = 0; i < nums.Length; i++)
+            Dictionary<int, int> valueToIndex = new Dictionary<int, int>();
+            for(int i = 0; i < nums.Length; i++)
             {
-                int diff = target - nums[i];
-
-                if (seen.ContainsKey(diff))
+                int difference = target - nums[i];
+                if(valueToIndex.TryGetValue(difference, out int previousIndex))
                 {
-                    Console.WriteLine($"{seen[diff]}, {i}");
-                    return [seen[diff], i];
+                    return [previousIndex, i];
                 }
-                else if (!seen.ContainsKey(nums[i]))
-                {
-                    seen.Add(nums[i], i);
-                }
+                valueToIndex[nums[i]] = i;
             }
-
-            throw new ArgumentException("not found");
+            throw new InvalidOperationException("No valid pair");
         }
     }
 }
