@@ -11,7 +11,7 @@
 
 | Problem | Difficulty | Attempt date | Topic/pattern (after attempt) | Independence / highest hint | Time | Complexity analysis | Key insight or mistake | Status | Repeat |
 |---|---|---|---|---|---:|---|---|---|---|
-| 121. Best Time to Buy and Sell Stock | Easy | 2026-08-18 | One-pass scan; running minimum; running optimum | Meaningful guided help / Level 4 | Not recorded | Initially incorrect; correctly derived O(n) time and O(1) space after guidance | Repeatedly searching earlier prices can be replaced by the lowest price seen so far. Watch subtraction order, index vs. value, and preserving the maximum. | Group B | 2026-08-21 |
+| 121. Best Time to Buy and Sell Stock | Easy | 2026-08-18; review 2026-08-21 | One-pass scan; running minimum; running optimum | Initial Level 4; review independent with minor compile correction | Not recorded | Review correctly derived O(n) time and O(1) space independently | Repeatedly searching earlier prices can be replaced by the lowest price seen so far. Review exposed only an uninitialized maximum-profit variable. | Group C | 2026-09-04 |
 | 217. Contains Duplicate | Easy | 2026-08-19 | Hash set; membership tracking | Meaningful guided help / Level 3 | Not recorded | Final expected O(n) time and O(n) space correct; initially misanalyzed pairwise and sorting costs | A set of previously seen values replaces repeated pairwise comparisons. Distinguish values from hashes; remember to initialize collections and check C# delimiters. | Group B | 2026-08-24 |
 | 242. Valid Anagram | Easy | 2026-08-19 | Frequency counting; hash map | Mostly independent / Level 1 plus C# API help | Not recorded | Correctly derived O(n) expected time and O(1) space for the fixed 26-letter alphabet | A frequency map can summarize multiplicities; increment for one string and decrement/remove for the other. Use `Length` for strings and practice dictionary syntax. | Group C | 2026-09-02 |
 | 1. Two Sum | Easy | 2026-08-20 | Complement lookup; hash map from value to index | Meaningful guided help / Level 3 plus C# API help | Not recorded | Correctly derived O(n) expected time and O(n) space | Store previously seen number → index, check the complement before storing, and keep dictionary keys and values conceptually distinct. | Group B | 2026-08-26 |
@@ -44,3 +44,8 @@ Review timing will be assigned after each attempt. Group A and Group B problems 
 - Completed post-problem reflection.
 - Day 3 complete; 125. Valid Palindrome was introduced but not attempted.
 - Day 4 should begin with the scheduled fresh review of 121. Best Time to Buy and Sell Stock, then continue with 125 if time permits.
+
+### Day 4 — 2026-08-21
+
+- Completed delayed review: 121. Best Time to Buy and Sell Stock — promoted from Group B to Group C; next review scheduled for 2026-09-04.
+- One focused late-evening problem; 125. Valid Palindrome remains unattempted.
