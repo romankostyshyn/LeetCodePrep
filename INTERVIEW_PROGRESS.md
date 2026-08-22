@@ -15,6 +15,7 @@
 | 217. Contains Duplicate | Easy | 2026-08-19 | Hash set; membership tracking | Meaningful guided help / Level 3 | Not recorded | Final expected O(n) time and O(n) space correct; initially misanalyzed pairwise and sorting costs | A set of previously seen values replaces repeated pairwise comparisons. Distinguish values from hashes; remember to initialize collections and check C# delimiters. | Group B | 2026-08-24 |
 | 242. Valid Anagram | Easy | 2026-08-19 | Frequency counting; hash map | Mostly independent / Level 1 plus C# API help | Not recorded | Correctly derived O(n) expected time and O(1) space for the fixed 26-letter alphabet | A frequency map can summarize multiplicities; increment for one string and decrement/remove for the other. Use `Length` for strings and practice dictionary syntax. | Group C | 2026-09-02 |
 | 1. Two Sum | Easy | 2026-08-20 | Complement lookup; hash map from value to index | Meaningful guided help / Level 3 plus C# API help | Not recorded | Correctly derived O(n) expected time and O(n) space | Store previously seen number → index, check the complement before storing, and keep dictionary keys and values conceptually distinct. | Group B | 2026-08-26 |
+| 125. Valid Palindrome | Easy | 2026-08-22 | Opposite-direction two pointers; filtered comparison | Meaningful guided help / Level 4 plus C# API help | Not recorded | Initially misstated; correctly derived O(n) time and O(1) space after guidance | Compare valid characters in place while skipping non-alphanumeric input. Use `char.IsLetterOrDigit`, normalize each compared character, and stop when pointers meet or cross. | Group B | 2026-08-29 |
 
 ## Review Queue
 
@@ -49,3 +50,10 @@ Review timing will be assigned after each attempt. Group A and Group B problems 
 
 - Completed delayed review: 121. Best Time to Buy and Sell Stock — promoted from Group B to Group C; next review scheduled for 2026-09-04.
 - One focused late-evening problem; 125. Valid Palindrome remains unattempted.
+
+### Day 5 — 2026-08-22
+
+- Completed: 125. Valid Palindrome — Group B; repeat scheduled for 2026-08-29.
+- Introduced opposite-direction two pointers and in-place filtered comparison.
+- Completed post-problem reflection.
+- Day 5 complete; 977. Squares of a Sorted Array deferred to Day 6.

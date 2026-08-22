@@ -16,9 +16,10 @@ public class Program
         Solution14 solution14 = new Solution14();
         Solution121 solution121 = new Solution121();
         Solution242 solution242 = new Solution242();
+        Solution125 solution125 = new Solution125();
 
-        Console.WriteLine($"{solution1.TwoSum([1, 2, 3], 3)}");
-        //Console.WriteLine($"{solution26.RemoveDuplicates([1, 1, 2])}");
+        //Console.WriteLine($"{solution1.TwoSum([1, 2, 3], 3)}");
+        //Console.WriteLine($"{solution125.IsPalindrome("mamam")}");
         //Console.WriteLine($"{solution35.SearchInsert([1, 3, 4, 5, 6, 7, 8], 2)}");
         //Console.WriteLine($"{solution27.RemoveElement([0, 1, 2, 2, 3, 0, 4, 2], 2)}");
         //solution66.PlusOne([8, 9, 9, 9]);
