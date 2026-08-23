@@ -1,4 +1,4 @@
-namespace LeetCode.Arrays
+namespace LeetCode.Strings
 {
     public class Solution242
     {

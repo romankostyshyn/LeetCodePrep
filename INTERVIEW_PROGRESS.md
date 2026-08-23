@@ -16,6 +16,7 @@
 | 242. Valid Anagram | Easy | 2026-08-19 | Frequency counting; hash map | Mostly independent / Level 1 plus C# API help | Not recorded | Correctly derived O(n) expected time and O(1) space for the fixed 26-letter alphabet | A frequency map can summarize multiplicities; increment for one string and decrement/remove for the other. Use `Length` for strings and practice dictionary syntax. | Group C | 2026-09-02 |
 | 1. Two Sum | Easy | 2026-08-20 | Complement lookup; hash map from value to index | Meaningful guided help / Level 3 plus C# API help | Not recorded | Correctly derived O(n) expected time and O(n) space | Store previously seen number → index, check the complement before storing, and keep dictionary keys and values conceptually distinct. | Group B | 2026-08-26 |
 | 125. Valid Palindrome | Easy | 2026-08-22 | Opposite-direction two pointers; filtered comparison | Meaningful guided help / Level 4 plus C# API help | Not recorded | Initially misstated; correctly derived O(n) time and O(1) space after guidance | Compare valid characters in place while skipping non-alphanumeric input. Use `char.IsLetterOrDigit`, normalize each compared character, and stop when pointers meet or cross. | Group B | 2026-08-29 |
+| 977. Squares of a Sorted Array | Easy | 2026-08-23 | Opposite-direction two pointers; fill output backward | Meaningful guided help / Level 4 | Not recorded | Correctly derived O(n) time, O(n) output space, and O(1) auxiliary space after guidance | In sorted input, the largest remaining absolute value is at an endpoint. Place its square at the back and move only that endpoint. | Group B | 2026-08-30 |
 
 ## Review Queue
 
@@ -57,3 +58,11 @@ Review timing will be assigned after each attempt. Group A and Group B problems 
 - Introduced opposite-direction two pointers and in-place filtered comparison.
 - Completed post-problem reflection.
 - Day 5 complete; 977. Squares of a Sorted Array deferred to Day 6.
+
+### Day 6 — 2026-08-23
+
+- Completed: 977. Squares of a Sorted Array — Group B; repeat scheduled for 2026-08-30.
+- Reinforced opposite-direction pointers, backward output construction, and output-versus-auxiliary space.
+- Completed post-problem reflection.
+- Day 6 complete; 283. Move Zeroes was introduced but not attempted.
+- Day 7 should begin with the scheduled fresh review of 217. Contains Duplicate, then continue with 283 if time permits.
