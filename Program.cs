@@ -18,6 +18,7 @@ public class Program
         Solution242 solution242 = new Solution242();
         Solution125 solution125 = new Solution125();
         Solution977 solution977 = new Solution977();
+        Solution283 solution283 = new Solution283();
 
 
         Console.WriteLine(string.Join(", ", solution977.SortedSquares([1, 2, 3])));
