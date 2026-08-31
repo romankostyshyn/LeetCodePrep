@@ -15,9 +15,10 @@
 | 217. Contains Duplicate | Easy | 2026-08-19; review 2026-08-24 | Hash set; membership tracking | Initial Level 3; review independent | Not recorded | Review correctly derived expected O(n) time and O(n) space independently | `HashSet.Add` combines insertion and duplicate detection. Be precise about the return value versus the negated `if` condition. | Group C | 2026-09-07 |
 | 242. Valid Anagram | Easy | 2026-08-19 | Frequency counting; hash map | Mostly independent / Level 1 plus C# API help | Not recorded | Correctly derived O(n) expected time and O(1) space for the fixed 26-letter alphabet | A frequency map can summarize multiplicities; increment for one string and decrement/remove for the other. Use `Length` for strings and practice dictionary syntax. | Group C | 2026-09-02 |
 | 1. Two Sum | Easy | 2026-08-20; review 2026-08-26 | Complement lookup; hash map from value to index | Initial Level 3; review algorithm independent with C# API corrections | Not recorded | Review correctly derived expected O(n) time and O(n) space independently | Store previously seen number → index and check before storing. Continue practicing `TryGetValue(..., out value)` and indexer assignment `[key] = value`. | Group C | 2026-09-09 |
-| 125. Valid Palindrome | Easy | 2026-08-22 | Opposite-direction two pointers; filtered comparison | Meaningful guided help / Level 4 plus C# API help | Not recorded | Initially misstated; correctly derived O(n) time and O(1) space after guidance | Compare valid characters in place while skipping non-alphanumeric input. Use `char.IsLetterOrDigit`, normalize each compared character, and stop when pointers meet or cross. | Group B | 2026-08-29 |
-| 977. Squares of a Sorted Array | Easy | 2026-08-23 | Opposite-direction two pointers; fill output backward | Meaningful guided help / Level 4 | Not recorded | Correctly derived O(n) time, O(n) output space, and O(1) auxiliary space after guidance | In sorted input, the largest remaining absolute value is at an endpoint. Place its square at the back and move only that endpoint. | Group B | 2026-08-30 |
-| 283. Move Zeroes | Easy | 2026-08-24 | Same-direction read/write pointers; stable in-place compaction | Meaningful guided help / Level 4 | Not recorded | Correctly derived O(n) time and O(1) auxiliary space | Compact non-zero values in original order, then fill the remaining suffix with zeroes. The write pointer never passes the scan pointer. | Group B | 2026-08-31 |
+| 125. Valid Palindrome | Easy | 2026-08-22; review 2026-08-31 | Opposite-direction two pointers; filtered comparison | Initial Level 4; delayed review fully independent | Not recorded | Delayed review independently derived and implemented O(n) time and O(1) space | Compare valid characters in place while skipping non-alphanumeric input. Clean delayed retrieval included correct C# APIs and edge-case dry runs. | Mastered | 2026-10-05 maintenance review |
+| 977. Squares of a Sorted Array | Easy | 2026-08-23 | Opposite-direction two pointers; fill output backward | Meaningful guided help / Level 4 | Not recorded | Correctly derived O(n) time, O(n) output space, and O(1) auxiliary space after guidance | In sorted input, the largest remaining absolute value is at an endpoint. Place its square at the back and move only that endpoint. | Group B | 2026-09-01 (rescheduled from 2026-08-30) |
+| 283. Move Zeroes | Easy | 2026-08-24 | Same-direction read/write pointers; stable in-place compaction | Meaningful guided help / Level 4 | Not recorded | Correctly derived O(n) time and O(1) auxiliary space | Compact non-zero values in original order, then fill the remaining suffix with zeroes. The write pointer never passes the scan pointer. | Group B | 2026-09-02 (rescheduled from 2026-08-31) |
+| 392. Is Subsequence | Easy | 2026-08-31 | Same-direction two pointers; ordered matching | Algorithm derived independently; meaningful implementation debugging | Not recorded | Correctly derived O(|t|) time and O(1) space | Advance through `t` every iteration and through `s` only on a match. Guard both indices and ensure dry runs reflect unconditional pointer movement. | Group B | 2026-09-08 |
 
 ## Review Queue
 
@@ -80,3 +81,10 @@ Review timing will be assigned after each attempt. Group A and Group B problems 
 
 - Completed delayed review: 1. Two Sum — promoted from Group B to Group C; next review scheduled for 2026-09-09.
 - Short busy-day session focused on one review problem.
+
+### Day 9 — 2026-08-31
+
+- Returned after several days away; review queue staggered to avoid cramming.
+- Plan: 125 review today, 977 review on 2026-09-01, and 283 review on 2026-09-02; resume new problems as session depth permits.
+- Completed delayed review: 125. Valid Palindrome — promoted from Group B to Mastered; maintenance review scheduled for 2026-10-05.
+- Completed: 392. Is Subsequence — Group B; repeat scheduled for 2026-09-08.

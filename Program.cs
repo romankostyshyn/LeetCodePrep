@@ -19,7 +19,7 @@ public class Program
         Solution125 solution125 = new Solution125();
         Solution977 solution977 = new Solution977();
         Solution283 solution283 = new Solution283();
-
+        Solution392 solution392 = new Solution392();
 
         Console.WriteLine(string.Join(", ", solution977.SortedSquares([1, 2, 3])));
         //Console.WriteLine($"{solution125.IsPalindrome("mamam")}");
