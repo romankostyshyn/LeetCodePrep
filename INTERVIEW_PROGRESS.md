@@ -93,13 +93,9 @@ Review timing will be assigned after each attempt. Group A and Group B problems 
 ### Day 10 — 2026-09-03
 
 - Returned after two missed days; overdue reviews staggered again rather than crammed.
+- Plan: 977 review today, 283 review on 2026-09-04, 242 review on 2026-09-05, and 121 review on 2026-09-06; add new material only as session depth permits.
 - Completed delayed review: 977. Squares of a Sorted Array — promoted from Group B to Group C; next review scheduled for 2026-09-17.
 - Completed: 643. Maximum Average Subarray I — Group B; repeat scheduled for 2026-09-11.
 - Introduced fixed-size sliding windows and rolling sums.
 - Completed post-problem reflection.
 - Day 10 complete after one delayed review and one new problem.
-
-### Day 10 — 2026-09-03
-
-- Returned after two missed days; overdue reviews staggered to protect retrieval quality.
-- Plan: 977 review today, 283 review on 2026-09-04, 242 review on 2026-09-05, and 121 review on 2026-09-06; add new material only as session depth permits.
