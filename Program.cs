@@ -21,8 +21,9 @@ public class Program
         Solution283 solution283 = new Solution283();
         Solution392 solution392 = new Solution392();
         Solution643 solution643 = new Solution643();
+        Solution219 solution219 = new Solution219();
 
-        Console.WriteLine(string.Join(", ", solution643.FindMaxAverage([1,12,-5,-6,50,3], 4)));
+        Console.WriteLine(string.Join(", ", solution219.ContainsNearbyDuplicate([1,2,3,1], 3)));
         //Console.WriteLine($"{solution125.IsPalindrome("mamam")}");
         //Console.WriteLine($"{solution35.SearchInsert([1, 3, 4, 5, 6, 7, 8], 2)}");
         //Console.WriteLine($"{solution27.RemoveElement([0, 1, 2, 2, 3, 0, 4, 2], 2)}");

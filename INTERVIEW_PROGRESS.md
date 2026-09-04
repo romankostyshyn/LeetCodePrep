@@ -17,13 +17,18 @@
 | 1. Two Sum | Easy | 2026-08-20; review 2026-08-26 | Complement lookup; hash map from value to index | Initial Level 3; review algorithm independent with C# API corrections | Not recorded | Review correctly derived expected O(n) time and O(n) space independently | Store previously seen number → index and check before storing. Continue practicing `TryGetValue(..., out value)` and indexer assignment `[key] = value`. | Group C | 2026-09-09 |
 | 125. Valid Palindrome | Easy | 2026-08-22; review 2026-08-31 | Opposite-direction two pointers; filtered comparison | Initial Level 4; delayed review fully independent | Not recorded | Delayed review independently derived and implemented O(n) time and O(1) space | Compare valid characters in place while skipping non-alphanumeric input. Clean delayed retrieval included correct C# APIs and edge-case dry runs. | Mastered | 2026-10-05 maintenance review |
 | 977. Squares of a Sorted Array | Easy | 2026-08-23; review 2026-09-03 | Opposite-direction two pointers; fill output backward | Initial Level 4; review independent with one loop-condition correction | Not recorded | Review correctly derived O(n) time, O(n) output space, and O(1) auxiliary space | In sorted input, the largest remaining absolute value is at an endpoint. Place its square at the back and move only that endpoint. | Group C | 2026-09-17 |
-| 283. Move Zeroes | Easy | 2026-08-24 | Same-direction read/write pointers; stable in-place compaction | Meaningful guided help / Level 4 | Not recorded | Correctly derived O(n) time and O(1) auxiliary space | Compact non-zero values in original order, then fill the remaining suffix with zeroes. The write pointer never passes the scan pointer. | Group B | 2026-09-04 (rescheduled from 2026-09-02) |
+| 283. Move Zeroes | Easy | 2026-08-24; review 2026-09-04 | Same-direction read/write pointers; stable in-place compaction | Initial Level 4; review independent with interface correction | Not recorded | Review correctly derived O(n) time and O(1) auxiliary space | Compact non-zero values in original order, then fill the remaining suffix with zeroes. Distinguish in-place mutation from the method's required return type. | Group C | 2026-09-18 |
 | 392. Is Subsequence | Easy | 2026-08-31 | Same-direction two pointers; ordered matching | Algorithm derived independently; meaningful implementation debugging | Not recorded | Correctly derived O(m) time, where m is `t.Length`, and O(1) space | Advance through `t` every iteration and through `s` only on a match. Guard both indices and ensure dry runs reflect unconditional pointer movement. | Group B | 2026-09-08 |
 | 643. Maximum Average Subarray I | Easy | 2026-09-03 | Fixed-size sliding window; rolling sum | Meaningful guided help / Level 4 | Not recorded | Correctly derived O(n) time and O(1) auxiliary space after guidance | Build the first window once, then subtract the leaving value and add the entering value. Keep current state separate from the best state and cast before division. | Group B | 2026-09-11 |
+| 219. Contains Duplicate II | Easy | 2026-09-04 | Most-recent-index tracking; hash map | Meaningful guided help / Level 3 plus C# API corrections | Not recorded | Correctly derived expected O(n) time and O(n) space | Map each value to its most recent index. A duplicate outside the distance limit must update the index rather than cause an early false result. | Group B | 2026-09-12 |
 
 ## Review Queue
 
 Review timing will be assigned after each attempt. Group A and Group B problems return sooner; Group C problems return later and must be solved again before becoming Mastered.
+
+At the start of every session, verify the current Europe/Warsaw date and adjust overdue or upcoming reviews before choosing the day's work.
+
+If a session crosses midnight without the user ending the learning day, keep recording work under that learning day's original date; begin the new date only after the user ends and later resumes.
 
 ## Session Notes
 
@@ -99,3 +104,9 @@ Review timing will be assigned after each attempt. Group A and Group B problems 
 - Introduced fixed-size sliding windows and rolling sums.
 - Completed post-problem reflection.
 - Day 10 complete after one delayed review and one new problem.
+
+### Day 11 — 2026-09-04
+
+- Completed the scheduled review: 283. Move Zeroes — promoted from Group B to Group C; next review scheduled for 2026-09-18.
+- Completed: 219. Contains Duplicate II — Group B; repeat scheduled for 2026-09-12.
+- Calendar date crossed midnight during the session; progress remains under the user-defined Day 11 date of 2026-09-04.
