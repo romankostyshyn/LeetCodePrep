@@ -21,6 +21,7 @@
 | 392. Is Subsequence | Easy | 2026-08-31; review 2026-09-08–2026-09-09 | Same-direction two pointers; ordered matching | Initial algorithm independent with meaningful implementation debugging; review algorithm independent with loop-bound correction | Not recorded | Review correctly derived O(m) time, where m is `t.Length`, and O(1) space, then completed a correct dry run and greedy justification | Advance through `t` every iteration and through `s` only on a match. Guard both indices with strict bounds; choosing the earliest match leaves the largest suffix available for later matches. | Group C | 2026-09-23 |
 | 643. Maximum Average Subarray I | Easy | 2026-09-03 | Fixed-size sliding window; rolling sum | Meaningful guided help / Level 4 | Not recorded | Correctly derived O(n) time and O(1) auxiliary space after guidance | Build the first window once, then subtract the leaving value and add the entering value. Keep current state separate from the best state and cast before division. | Group B | 2026-09-11 |
 | 219. Contains Duplicate II | Easy | 2026-09-04 | Most-recent-index tracking; hash map | Meaningful guided help / Level 3 plus C# API corrections | Not recorded | Correctly derived expected O(n) time and O(n) space | Map each value to its most recent index. A duplicate outside the distance limit must update the index rather than cause an early false result. | Group B | 2026-09-12 |
+| 20. Valid Parentheses | Easy | 2026-09-10 | Stack; delimiter matching | Meaningful structural hint / Level 3; stack and LIFO behavior were introduced after the initial exploration | Not recorded | After the structural hint, correctly derived O(n) time and O(n) space, implemented the solution, and explained LIFO behavior | The initial reasoning identified the need to remember unmatched openings; guidance supplied the stack pattern. The user then independently improved it by pushing expected closing brackets and wrote correct code. | Group B | 2026-09-16 |
 
 ## Review Queue
 
@@ -29,6 +30,10 @@ Review timing will be assigned after each attempt. Group A and Group B problems 
 At the start of every session, verify the current Europe/Warsaw date and adjust overdue or upcoming reviews before choosing the day's work.
 
 If a session crosses midnight without the user ending the learning day, keep recording work under that learning day's original date; begin the new date only after the user ends and later resumes.
+
+Before creating or changing a problem assessment, review the entire exchange for that problem from restatement through final verification. Distinguish insights produced by the user from patterns, data structures, or implementation steps supplied by the interviewer.
+
+Record the highest hint actually given, all material reasoning and implementation corrections, the quality of dry runs and correctness explanations, and only then assign the group and next review date. When independence is uncertain, use the more conservative assessment.
 
 ## Session Notes
 
@@ -140,3 +145,11 @@ If a session crosses midnight without the user ending the learning day, keep rec
 - Review result: independently recovered brute-force and complement-map approaches and wrote the core implementation; corrected the fallback exception type and clarified duplicate-key overwriting and lookup-before-insert behavior.
 - Day 14 complete after finishing two delayed reviews.
 - Next-session plan for 2026-09-10: introduce 20. Valid Parentheses as a new foundational problem, using the full interview workflow; reveal and discuss its pattern only after the attempt. Keep the scheduled 643 review on 2026-09-11.
+
+### Day 15 — 2026-09-10
+
+- Plan: fresh attempt of 20. Valid Parentheses using the full interview workflow; do not reveal the intended pattern before the user's approach.
+- Keep the scheduled review of 643. Maximum Average Subarray I on 2026-09-11.
+- Completed: 20. Valid Parentheses — Group B; first review scheduled for 2026-09-16.
+- Result: independently identified the need to remember unmatched opening brackets, then received the stack/LIFO structural hint; afterward independently chose to store expected closing brackets, wrote correct C# code, and explained the behavior accurately.
+- Progress correction: the initial entry incorrectly credited the stack discovery as independent; corrected after reviewing the conversation sequence.
